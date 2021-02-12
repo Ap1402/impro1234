@@ -3,8 +3,8 @@
 @section('content')
 
     <!--==========================
-                                                                                  About Section
-                                                                                ============================-->
+                                                                                                  About Section
+                                                                                                ============================-->
     <section id="about" class="wow fadeInUp">
         <div class="container">
             <div class="row">
@@ -43,8 +43,8 @@
     </section><!-- #about -->
 
     <!--==========================
-                                                                                  Services Section
-                                                                                ============================-->
+                                                                                                  Services Section
+                                                                                                ============================-->
     <section id="services">
         <div class="container">
             <div class="section-header">
@@ -111,8 +111,8 @@
     </section><!-- #services -->
 
     <!--==========================
-                                                                                  Clients Section
-                                                                                ============================-->
+                                                                                                  Clients Section
+                                                                                                ============================-->
     <section id="clients" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
@@ -139,8 +139,8 @@
     </section><!-- #clients -->
 
     <!--==========================
-                                                                                  Our Portfolio Section
-                                                                                ============================-->
+                                                                                                  Our Portfolio Section
+                                                                                                ============================-->
     <section id="portfolio" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
@@ -264,8 +264,8 @@
     </section><!-- #portfolio -->
 
     <!--==========================
-                                                                                  Testimonials Section
-                                                                                ============================-->
+                                                                                                  Testimonials Section
+                                                                                                ============================-->
     <section id="testimonials" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
@@ -343,8 +343,8 @@
     </section><!-- #testimonials -->
 
     <!--==========================
-                                                                                  Call To Action Section
-                                                                                ============================-->
+                                                                                                  Call To Action Section
+                                                                                                ============================-->
     <section id="call-to-action" class="wow fadeInUp">
         <div class="container">
             <div class="row">
@@ -363,8 +363,8 @@
     </section><!-- #call-to-action -->
 
     <!--==========================
-                                                                                  Our Team Section
-                                                                                ============================-->
+                                                                                                  Our Team Section
+                                                                                                ============================-->
     {{-- <section id="team" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
@@ -440,9 +440,11 @@
     </section><!-- #team --> --}}
 
     <!--==========================
-                                                                                  Contact Section
-                                                                                ============================-->
+                                                                                                  Contact Section
+                                                                                                ============================-->
+
     <section id="contact" class="wow fadeInUp">
+
         <div class="container">
             <div class="section-header">
                 <h2>Contáctanos</h2>
@@ -480,35 +482,36 @@
 
             </div>
         </div>
-        <div id="mapid"></div>
 
+        <div id="mapid" class="map"></div>
 
 
         <div class="container">
             <div class="form">
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
+                <form action="https://formspree.io/f/mvovyklk" method="post" role="form" class="contactForm">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="nombre" class="form-control" id="name" placeholder="Su nombre"
+                                data-rule="minlen:1" data-msg="Por favor introduzca un nombre" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="email" class="form-control" name="correo" id="email"
+                                placeholder="Correo electronico" data-rule="email"
+                                data-msg="Por favor introduzca un correo válido" />
                             <div class="validation"></div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                            data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto"
+                            data-rule="minlen:4" data-msg="Por favor introduzca un " />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required"
-                            data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <textarea class="form-control" name="mensaje" rows="5" data-rule="required"
+                            data-msg="Por favor introduzca su mensaje" placeholder="Mensaje"></textarea>
                         <div class="validation"></div>
                     </div>
                     <div class="text-center"><button type="submit">Send Message</button></div>
@@ -517,5 +520,19 @@
 
         </div>
     </section><!-- #contact -->
+
+    <script>
+        var mymap = L.map('mapid').setView([10.1700964,-67.9648047,17], 13);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoiZmx5bmQxNDAyIiwiYSI6ImNraDN1cDNjbTAwOWUzNHAxazh2YWtvemYifQ.bqpYvupUCMm1uQoB_mEGkA'
+        }).addTo(mymap);
+
+        L.marker([10.1700964,-67.9648047,17]).addTo(mymap)
+    </script>
 
 @stop

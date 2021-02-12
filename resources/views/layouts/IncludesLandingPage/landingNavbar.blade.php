@@ -6,7 +6,7 @@
 
          <div id="logo" class="pull-left">
 
-             <a href="#body"><img src="/img/Logo-impro.png" alt="" title="" /></a>
+             <a href="#body"><img src="img/Logo-impro.png" alt="" title="" /></a>
          </div>
 
          <nav id="nav-menu-container">

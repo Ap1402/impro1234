@@ -731,7 +731,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #clients .owl-dot.active {
-    background-color:#ff792b;
+    background-color: #ff792b;
 }
 
 /* Our Portfolio Section
@@ -1033,13 +1033,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-#contact #google-map {
+#contact .map {
     height: 290px;
     margin-bottom: 20px;
 }
 
 @media (max-width: 576px) {
-    #contact #google-map {
+    #contact .map {
         margin-top: 20px;
     }
 }
@@ -1379,12 +1379,20 @@ button {
     margin-top: 50vh;
 }
 
-.text-about{
-    font-size:18px;
-    color: rgb(104, 103, 103)
+.text-about {
+    font-size: 18px;
+    color: rgb(104, 103, 103);
 }
 
-#about .content h2{
+#about .content h2 {
     text-align: center;
     text-justify: center;
+}
+
+#mapid {
+    height: 300px;
+}
+
+.form button{
+    margin-top:25px;
 }
