@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('rastreo', 'trackerController@index');
 
- Route::get('test', 'trackerController@test');
- Route::get('/api/tracking/statuses', 'trackerController@getTrackingStatuses');
- Route::get('/api/tracking/{trackingNumber}', 'trackerController@getTrackingInfo');
+Route::post('/send-email', 'MailController@sendEmail')->name('send.mail');
+Route::get('test', 'trackerController@test');
+Route::get('/api/tracking/statuses', 'trackerController@getTrackingStatuses');
+Route::get('/api/tracking/{trackingNumber}', 'trackerController@getTrackingInfo');

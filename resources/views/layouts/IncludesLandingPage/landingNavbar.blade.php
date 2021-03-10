@@ -11,12 +11,12 @@
 
          <nav id="nav-menu-container">
              <ul class="nav-menu">
-                 <li class="menu-active"><a href="#body">Home</a></li>
+                 <li class="menu-active"><a href="#body">Inicio</a></li>
                  <li><a href="#about">Nosotros</a></li>
                  <li><a href="#services">Rubros</a></li>
                  <li><a href="#clients">Marcas</a></li>
 
-                 <li><a href="#portfolio">Portfolio</a></li>
+            {{--      <li><a href="#portfolio">Portfolio</a></li>
                  <li><a href="#team">Team</a></li>
                  <li class="menu-has-children"><a href="">Drop Down</a>
                      <ul>
@@ -25,8 +25,8 @@
                          <li><a href="#">Drop Down 4</a></li>
                          <li><a href="#">Drop Down 5</a></li>
                      </ul>
-                 </li>
-                 <li><a href="#contact">Contact</a></li>
+                 </li> --}}
+                 <li><a href="#contact">Contáctanos</a></li>
              </ul>
          </nav><!-- #nav-menu-container -->
      </div>
