@@ -88,8 +88,7 @@
         }
     })
 
-</script>
---}}
+</script> --}}
 
 <script>
     function getModal() {
@@ -121,9 +120,8 @@
             if (trackingNumber.length === 0) {
                 throw new Error('Por favor ingrese un número de orden válido')
             }
-            const responseTracking = await fetch('http://192.168.1.211:8000/api/tracking/' +
-                trackingNumber);
-            const responseStatuses = await fetch('http://192.168.1.211:8000/api/tracking/statuses');
+            const responseTracking = await fetch('http://localhost:8000/api/tracking/' + trackingNumber);
+            const responseStatuses = await fetch('http://localhost:8000/api/tracking/statuses');
 
             const dataTracking = await responseTracking.json();
             const dataStatuses = await responseStatuses.json();
@@ -142,8 +140,7 @@
 
             trackingNumberInputField.classList.remove('is-invalid')
             trackingNumberInputField.classList.add('is-valid')
-            console.log(dataTracking)
-            myModal.show()
+            myModal.show();
         } catch (err) {
             trackingNumberInputField.classList.add('is-invalid')
             trackingModalInvalidFeedback[0].innerText = err.message

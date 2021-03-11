@@ -12,12 +12,12 @@ class MailController extends Controller
     {
         $details = [
             'from' => 'Email enviado desde formulario de contacto',
-            'email' => $request->input('email'),
-            'name' => $request->input('name'),
-            'subject' => $request->input('subject')
+            'email' => $request['email'],
+            'name' => $request['name'],
+            'message' => $request['message'],
+            'subject' => $request['subject']
         ];
-
-        Mail::to('contacto@industriasimpro.com')->send(new ContactMail($details));
-        return "Email Sent";
+        Mail::to(env('MAIL_TO', 'contacto@industriasimpro.com'),)->send(new ContactMail($details));
+        return "Correo enviado";
     }
 }

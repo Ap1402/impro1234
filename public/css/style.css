@@ -544,7 +544,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: block;
     width: 50px;
     height: 3px;
-    background: #50d8af;
+    background: #ff792b;
     bottom: 0;
     left: 0;
 }
@@ -650,7 +650,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box .icon i {
     color: #444;
-    font-size: 64px;
+    font-size: 60px;
     transition: 0.5s;
     line-height: 0;
     margin-top: 34px;
@@ -662,6 +662,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
 }
 
 #services .box h4 {
@@ -915,8 +916,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-    background: #50d8af;
-    border: 3px solid #50d8af;
+    background: #c05d23;
+    border: 3px solid #c05d23;
 }
 
 /* Our Team Section
@@ -941,7 +942,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .details {
-    background: #50d8af;
+    background: #ff792b;
     color: #fff;
     padding: 15px;
     border-radius: 0 0 3px 3px;
@@ -987,7 +988,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 48px;
     display: inline-block;
     margin-bottom: 10px;
-    color: #50d8af;
+    color: #ff792b;
 }
 
 #contact .contact-info address,
@@ -1009,7 +1010,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-    color: #50d8af;
+    color: #ff792b;
 }
 
 #contact .contact-address,
@@ -1045,8 +1046,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-    color: #50d8af;
-    border: 1px solid #50d8af;
+    color: #ff792b;
+    border: 1px solid #ff792b;
     display: none;
     text-align: center;
     padding: 15px;
@@ -1087,7 +1088,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-    background: #50d8af;
+    background: #ff792b;
     border: 0;
     border-radius: 3px;
     padding: 10px 30px;
@@ -1097,7 +1098,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-    background: #2dc899;
+    background: #b3693e;
 }
 
 /*--------------------------------------------------------------
@@ -1393,6 +1394,123 @@ button {
     height: 300px;
 }
 
-.form button{
-    margin-top:25px;
+.form button {
+    margin-top: 25px;
+}
+
+.about-header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #0c2e8a;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0px 1rem 1.5rem rgba(black, 0.5);
+}
+.banner {
+    background-image: url(https://images.unsplash.com/photo-1545703549-7bdb1d01b734?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.svg {
+    background-color: white;
+    width: dp-size;
+    height: dp-size;
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.3);
+    border-radius: 50%;
+    transform: translateY(50%);
+    transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.svg:hover {
+    transform: translateY(50%) scale(1.3);
+}
+
+#services .card .icon {
+    float: left;
+}
+
+#services .card .icon i {
+    color: #444;
+    font-size: 60px;
+    transition: 0.5s;
+    line-height: 0;
+    margin-top: 34px;
+}
+
+#services .card .icon i:before {
+    background: #0c2e8a;
+    background: linear-gradient(45deg, #3c81ff 0%, #0059ff 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.card-rubro {
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 15px rgb(73 78 92 / 10%);
+    transition: 0.6s;
+    height: 380px;
+    border-radius: 1rem;
+}
+
+.card-rubro:hover,
+.card-rubro:focus,
+.card-rubro:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-body > .title > a {
+    font-size: 25px;
+    color: #0c2e8a;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-card {
+    margin-top: -60px;
+}
+.icon-card > i {
+    font-size: 45px;
+    background: white;
+    padding: 20px;
+    border-radius: 100%;
+}
+.icon-card > i:before {
+    background: #0c2e8a;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.card-rubro .card-text {
+    font-size: 14px;
+    text-align: center;
+    text-justify: inter-word;
+}
+.card-img-top {
+    height: 150px;
 }

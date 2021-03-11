@@ -11,7 +11,7 @@
 <body>
     <h2>Enviado desde:</h2>
     <p>{{ $details['from'] }}</p>
-    <h2>Nombre de cliente:</h2>
+    <h2>Nombre del cliente</h2>
     <p>{{ $details['name'] }} </p>
     <h2>Email de cliente:</h2>
     <p>{{ $details['email'] }} </p>

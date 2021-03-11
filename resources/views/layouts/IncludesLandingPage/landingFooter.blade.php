@@ -1,7 +1,7 @@
 <footer id="footer">
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+            &copy; Copyright <strong>Industrias Impro</strong>. Todos los derechos reservados
         </div>
         <div class="credits">
 

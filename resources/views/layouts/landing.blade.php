@@ -8,8 +8,13 @@
     <meta content="" name="description">
 
     <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Google Fonts -->
     <link
@@ -35,6 +40,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+    <script src="js/app.js"></script>
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -47,7 +53,9 @@
 </head>
 
 <body id="body">
-    <div id="preloader"></div>
+    <div id="preloader">
+
+    </div>
 
     @include('layouts.IncludesLandingPage.landingTopbar')
     @include('layouts.IncludesLandingPage.landingNavbar')
