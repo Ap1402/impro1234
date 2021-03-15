@@ -143,7 +143,7 @@
             myModal.show();
         } catch (err) {
             trackingNumberInputField.classList.add('is-invalid')
-            trackingModalInvalidFeedback[0].innerText = err.message
+            trackingModalInvalidFeedback[0].innerText = 'No se encontró ninguna orden con este número de rastreo'
         }
     })
 

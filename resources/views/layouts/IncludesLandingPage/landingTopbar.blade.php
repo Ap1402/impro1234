@@ -4,7 +4,7 @@
     <section id="topbar" class="d-none d-lg-block">
         <div class="container clearfix">
             <div class="contact-info float-left">
-                <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+                <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">info@industriasimpro.com</a>
                 <i class="fa fa-phone"></i> +58 424 4187444
             </div>
             <div class="social-links float-right">
